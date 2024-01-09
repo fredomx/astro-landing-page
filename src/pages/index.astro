@@ -10,6 +10,7 @@ import Splash from "~/components/splash.astro";
 import PriceChart from "~/components/price-chart.astro";
 import "~/styles/index.css";
 import Contact from "~/components/contact.astro";
+import Planet from "~/components/planet.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -72,6 +73,7 @@ const description =
       <!-- <Compatibility /> -->
       <Showcase />
       <Contact />
+      <Planet />
     </div>
     <Footer />
   </body>
