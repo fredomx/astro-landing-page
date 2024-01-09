@@ -8,20 +8,20 @@ import ContentSection from "~/components/content-section.astro";
 
 <Icon slot="eyebrow" name="mdi:planet" class="h-32 flex-shrink-0 text-green-600 dark:text-green-400" />
   <Fragment slot="lead">
-    Nuestras páginas web y hospedaje funcionan con energía <span class="text-primary">sostenible.</span> 
+    Nuestras páginas web funcionan con energía <span class="text-primary">sostenible.</span> 
   </Fragment>
-  
-  
-  <div class="w-64 justify-center">
-    <a href="https://www.websitecarbon.com/website/futunub-com/" target="_blank">
-        <img src="src/assets/planet-badge.png"></img>
+  <div>
+    <a
+      href="https://www.websitecarbon.com/website/futunub-com/" target="_blank"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon pack="mdi" name="rocket" class="h-8" />
+      <span>Descubre por qué</span>
     </a>
-    
+  
   </div>
-  
-  
 
-
+  <div id="wcb" class="carbonbadge wcb-d"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 
 </ContentSection>
-
